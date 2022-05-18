@@ -1,0 +1,47 @@
+
+.BodyVir{
+    background-color: rgb(130, 149, 144);
+}
+.HeaderVir{
+    background-color: rgb(97, 123, 117);    
+    display: flex;
+    font-size: 52px;
+    font-style: oblique;
+    font-weight: 500;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    margin-top: 3%;
+}
+.CajaVir{
+    background-color: rgb(130, 149, 144); 
+    display: flex;
+    width: 90%;
+    margin-top:5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imagenV{
+    margin:auto;
+    margin-top:2px;
+    margin-bottom:5px;
+    border: 10px solid rgb(97, 123, 117);  
+    padding: 60px;
+    width: 240;
+    height: 240;
+   
+    
+}
+img:hover{
+    opacity: .5;
+    transition:.8s;
+    
+}
