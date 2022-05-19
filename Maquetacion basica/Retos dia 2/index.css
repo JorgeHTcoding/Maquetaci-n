@@ -1,0 +1,277 @@
+* {
+    margin:auto;
+    padding:auto;
+}
+
+.body{
+    display: flex;
+    background-color: rgb(88, 130, 153);
+    width:100%;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column;      
+    align-content: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1200px;
+    position: relative;
+
+}
+.nombre{
+    
+    display: flex;    
+    font-size: 50px;
+    font-family: 'Optima', sans-serif;    
+    justify-content: flex-end;
+    align-items: flex-start;    
+    margin-right: 70px;
+    margin-top: 55px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+
+}
+.proff{
+
+    display: flex;    
+    font-size: 30px;
+    font-family: 'Optima', sans-serif;    
+    justify-content: flex-end;
+    align-items: flex-end;    
+    margin-right:170px ;
+    margin-bottom:70px;
+    color: #fff;
+    position: absolute ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.linea{
+
+    display: flex;    
+    font-size: 30px;
+    font-family: 'Optima', sans-serif;    
+    justify-content: flex-end;
+    align-items: flex-end;    
+    margin-right: 82px;
+    margin-bottom:115px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.imagenM{
+
+    display:flex;
+    
+}
+
+.lateralIzq{
+    display: flex;
+    background-color: rgb(245, 249, 251);
+    width: 20%;
+    height: 1100px;
+    margin-top:171px;
+    margin-left:507px;
+    flex-direction: column;  
+    position:absolute;
+    justify-content: flex-start;
+    align-items: flex-start;  
+
+
+}
+.perfilPersonal{
+
+    font-family:'Optima', sans-serif ;
+    color:rgb(65, 70, 73);
+    display:flex;
+    flex-direction: column; 
+    margin-top: 20px;
+    padding-left:5px
+  
+    
+}
+.tituloPersonal{
+
+    display:flex;
+    flex-direction: row; 
+    
+}
+.infoPersonal{
+    margin-top: 15px;
+    margin-left:15px;
+    display:flex;
+    flex-direction: row;
+    
+
+}
+.infoContacto{
+    
+    font-family:'Optima', sans-serif ;
+    color:rgb(65, 70, 73);
+    display:flex;
+    flex-direction: column; 
+    margin-top: 10px;
+}
+.tituloContacto{
+    
+    display:flex;
+    flex-direction: row; 
+    
+
+}
+.listaContacto{
+   
+    list-style: none; 
+    font-family:'Optima', sans-serif ;
+    color:rgb(65, 70, 73);
+    display:flex;
+    flex-direction: column; 
+    margin-top: 20px;   
+    padding-right: 50px;
+}
+
+.bold{
+    font-weight: bold ;
+}
+
+.idiomas{
+
+    font-family:'Optima', sans-serif ;
+    color:rgb(65, 70, 73);
+    display:flex;
+    flex-direction: column; 
+    padding-right: 5px;
+   
+}
+
+.tituloIdiomas{
+
+    display:flex;
+    flex-direction: row; 
+    margin-bottom: 10px;
+}
+.formacion{
+
+    font-family:'Optima', sans-serif ;
+    color:rgb(65, 70, 73);
+    display:flex;
+    flex-direction: column; 
+    margin-top: 25px;
+    padding-right: 5px;
+}
+.tituloFormacion{
+  display:flex;
+    flex-direction: row; 
+    margin-bottom: 10px;
+}
+.listaFormacion{
+
+    font-family:'Optima', sans-serif ;
+    color:rgb(65, 70, 73);
+    display:flex;
+    flex-direction: column; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.tecnicas{
+    font-family:'Optima', sans-serif ;
+    color:rgb(65, 70, 73);
+    display:flex;
+    flex-direction: column; 
+    margin-top: 10px;
+    padding-right: 5px;
+}
+
+.tituloTecnicas{
+    display:flex;
+    flex-direction: row; 
+    margin-bottom: 10px;
+
+}
+
+ .lateralDer{
+     
+    display: flex;
+    background-color: rgb(163, 171, 176);
+    width: 477px;
+    height: 1100px;
+    margin-top:171px;
+    margin-left:880px;  
+    flex-direction: column;  
+    position:absolute;
+   
+   
+
+ }
+.habilidades{
+
+    font-family:'Optima', sans-serif ;
+    color:rgb(44, 50, 53);
+    display:flex;
+    flex-direction: column; 
+    margin-top: 20px;
+    padding-right:20px;
+    margin-bottom: 10px;
+
+}
+.tituloHab{
+    display:flex;
+    flex-direction: row; 
+    margin-bottom: 20px;
+}
+.listaHab{
+    text-align: left;    
+    font-weight: 300;
+}
+
+.expLab{
+
+    font-family:'Optima', sans-serif ;
+    color:rgb(44, 50, 53);
+    display:flex;
+    flex-direction: column; 
+    margin-top: 20px;
+    padding-right:20px;
+    text-align: center;
+    
+}
+.empresa{
+    color:rgb(31, 30, 30);
+    display:flex;
+    flex-direction: row; 
+    margin-top: 20px;
+    margin-bot: 50px;
+    text-align: center;
+}
+.fechaEmp{
+    display:flex;
+    flex-direction: row; 
+    
+    text-align: center;
+}
+.descEmp{
+    text-align: left;
+    display:flex;
+    flex-direction: row; 
+    margin-top: 20px;
+    padding-left: 20px;
+
+}
+.diamante{
+    
+}
