@@ -1,0 +1,364 @@
+*{
+    @-ms-viewport{
+        width: extend-to-zoom;
+          zoom: 1.0;
+          margin:0;
+          padding:0;
+      } 
+       
+    
+   
+}
+
+body{
+    height: 100%;
+    width: 100%;
+
+}
+.topnav {
+  
+    background-color: #1B7575;
+    overflow: hidden;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 7px;  
+    box-shadow: 8px 8px 38px rgba(0, 0, 0, 0.6); 
+
+  }
+  .logoHeader{
+      display: flex;     
+      width: 360px;
+      height: 50px;
+      padding-top: 5px;
+      padding-left: 890px;
+     
+  }
+ 
+  .topnav a {
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;  
+    color: #e7e7e7;
+    justify-content: center;
+    padding-top: 8px;       
+    padding-right: 40px;
+    padding-left: 40px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+ 
+  .topnav a:hover {
+    background-color: #C3922C;
+    color: black;   
+    transition:.9s;
+  }
+  
+ 
+  .topnav .icon {
+    display: none;
+  }
+
+.cabecera{
+    display: flex;
+    flex-direction: row;    
+    background-image:url(/dia3/Resources/portada.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;   
+    width: 100%;
+    height:605px
+    
+}
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #db6e6d;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #d14b4b;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #73cfc5;
+    --color-2: #6431db;
+    --color-3: #049b48;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #db6e33;
+    --color-3: #d3c01b;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+ 
+   
+  .tituloPortada {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;  
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 85px;
+    text-transform: uppercase;  
+    margin-top: 1px;
+    padding-left: 1380px;
+   
+  }
+.cartasVuelta{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-around;  
+    margin-top: 40px;   
+    margin-bottom: 100px; 
+    
+
+}
+.ofertas{
+    height: 420px;
+    width: 320px;
+    position: relative;
+    transform-style: preserve-3d;   
+    perspective: 1000px;
+  }
+
+  .ofertas .carta{
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+  }
+  .ofertas:hover > .frontal{
+    transform: rotateY(-180deg);    
+  }
+  .ofertas .carta img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .ofertas .trasero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 300px;
+    height: 420px;
+    transform: rotateY(180deg);
+  }
+  .ofertas:hover > .trasero{
+    transform: rotateY(0deg);
+  }
+  .ofertas .trasero img{
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+  }
+  .ofertas .trasero .info{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+ .titulo{
+     margin-top: 10px;
+ }
+  .texto{    
+      
+      margin-top: 10px;
+      width: 300px;
+  }
+
+  .infoTitle{
+    display: flex;  
+    flex-direction: row;    
+    background-color: #ebb84a;
+    justify-content: center;  
+    align-items: center;   
+    height: 8vh;  
+    font-size: 30px;
+    color: white;
+    box-shadow: 8px 8px 38px rgba(0, 0, 0, 0.2); 
+  }
+  .bloque1{
+    display: flex;  
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #3AAFAB;
+    color: white;
+    box-shadow: 8px 8px 38px rgba(0, 0, 0, 0.2); 
+  }
+ 
+
+  .infoEmp{
+     
+      width:50vw;
+      display: flex;  
+      font-size: 22px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding-left: 50px;
+      
+  }
+
+  .sideImg{
+    
+    display: flex; 
+    width: 20vw;   
+    height: 55vh;   
+    margin-top: 35px;
+
+
+  }
+
+  .bloqueFormulario{
+
+    display: flex;   
+  
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    background-color: #3AAFAB;
+    color: #fff;
+    padding: 50px 0;
+  }
+  .formImg{
+    display: flex;    
+    width: 60vw;   
+    height: 55vh;   
+    
+}
+.formulario {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.formulario * {
+  box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+.botones{
+  display: flex;  
+  justify-content:space-around;
+  margin-left: 200px;
+  margin-top: 30px;
+
+}
+  .boton {
+    display: flex;       
+    background-color: #EBB84A; 
+    border: none;
+    color: white;
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+   
+  }
+   
+  
+  .boton:hover {
+    background-color: #cc5355;
+    color: white;
+  }
+ 
+
+ 
