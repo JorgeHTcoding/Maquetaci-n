@@ -1,0 +1,183 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    
+    list-style: none;
+    @-ms-viewport {
+        width: extend-to-zoom;
+        zoom: 1.0;
+
+    }
+}
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+body{
+    background-color: #fafafa;
+    
+}
+.cuerpo{
+    
+position: relative;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.bloquePrincipal{
+    
+    min-width: 770px;
+    position: relative; 
+    display: flex;
+    flex-direction: row;   
+    margin-top: 10vh;
+
+}
+.bloqueFoto{
+    
+    position: relative;
+    padding-right: 1.7vw;
+}
+
+
+.bloqueInput{
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    width: 19vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bloqueLogin{
+    max-width: 100%;
+    min-width:355px;
+    position: relative;
+    background-color: #fff;
+    border:1px solid rgba(173, 173, 173, 0.548);
+    width: 100%;
+    height:43vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    padding-bottom: 25px;
+}
+.bloqueFormulario{
+   
+    position: relative;
+    padding-bottom: 25px;    
+}
+
+ .formulario input
+  {
+    max-width: 100%;
+    min-width:275px;
+    position: relative;
+    padding-left: 3px;
+    width: 100%;
+    height:3.8vh;
+    margin-bottom:8px;  
+    border: 1px solid rgba(173, 173, 173, 0.548);
+    border-radius: 2px;  
+    background-color: rgba(235, 233, 233, 0.26);
+  }
+.botones{
+        
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+.boton{
+    width: 100%;
+    height:3vh;
+    background-color: #B2DFFC;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.facebook{
+    max-width: 10.6vw;
+    min-width: 200px;
+}
+.olvidado{
+    padding-top: 2vh;
+    font-size: 12px;
+    color: #08456ed7;
+}
+.register{ 
+    max-width: 100%;
+    min-width:355px;
+    background-color: #fff;
+    border:1px solid rgba(173, 173, 173, 0.548);
+    width: 100%;
+    height:6vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.84rem;
+    color: #242424d7;
+}
+.registrate2{
+    color: rgb(42, 126, 253);
+    font-weight: bold;
+}
+.downApp{
+    max-width: 100%;
+    min-width:130px;
+    margin-top: 20px;
+    margin-bottom: 20px;;
+}
+.logosStore{
+    max-width: 100%;
+    min-width:280px;
+}
+.downtext{    
+    font-size: 13px;
+    color:#242424d7 ;
+}
+.footer{
+    margin-top: 100px;
+    width: 48%;
+    font-size: 11px;
+    color:#888888d7;
+}
+.linksFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+      
+}
+.plink{
+    padding-left: 25px;
+    padding-top: 15px;
+}
+.copyright{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width:550px) {
+    
+    .bloqueFoto{
+        display: none;
+    
+    }
+}
+
+
+
