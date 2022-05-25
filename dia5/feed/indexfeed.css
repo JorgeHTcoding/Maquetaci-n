@@ -1,0 +1,251 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    
+
+    list-style: none;
+
+    @-ms-viewport {
+        width: extend-to-zoom;
+        zoom: 1.0;
+
+    }
+}
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.cuerpo {
+    
+    color: rgb(61, 61, 61);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+
+}
+
+.bloqueNavegador {
+    background-color: #FFF;
+    width: 100%;
+    height: 60px;    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.barraNavegador {
+ 
+   position: relative;
+    z-index: 1;
+    padding-top: 3px ;
+    height: 100%;
+    border-bottom: 1px solid rgba(179, 179, 179, 0.548);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logoInsta {
+    padding-right: 230px;
+}
+
+.buscador {
+    max-width: 100%;
+    min-width: 270px;
+    padding-left: 20px;    
+    width: 14.3vw;
+    height: 3.8vh;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #EFEFEF;
+    font-size: 14px;
+    color: rgba(175, 175, 175, 0.185);
+}
+
+.sessionIni {
+    padding-left:  80px;
+    padding-bottom: 2px;
+}
+
+.bloquePerfil{
+    position: relative;
+    width: 950px;
+    padding-top: 35px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 70px;
+    padding-right: 35px;
+   
+}
+.bloqueFoto{
+    position: relative;
+    padding-right: 100px;
+}
+.foto{
+    position: relative;
+}
+.bloqueTitulo{       
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
+.nombre{    
+    padding-bottom: 1px;
+    padding-right: 30px;
+    font-size: 28px;
+    
+}
+.followers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-bottom: 40px;
+}
+.bold{
+    font-weight: bold;
+}
+.bloqueCompet{
+    padding-bottom: 5px;
+}
+.comp1{
+    padding-bottom: 6px; 
+    font-size: 16px;
+}
+.comp2{
+    font-size:15.5px;
+    color:rgb(116, 116, 116)
+}
+.p2{
+padding-bottom: 3px;
+}
+.p5{
+padding-top: 4px;
+}
+.p5a{
+    
+    font-size: 15px;    
+    text-decoration: none;
+    color: rgb(1, 88, 146);
+}
+.barraHistorias{
+    display: flex;
+    justify-content: center;
+    padding-left: 60px;
+}
+.barraHistorias{
+    display: flex;
+    font-weight: 900;
+    flex-direction: row;   
+    justify-content: center;
+    font-size: 14px;
+    padding-bottom: 60px;
+    color:rgba(53, 53, 53, 0.856);
+}
+.iconH{
+    padding-right: 40px;
+    
+}
+.hist1{
+    display: flex;
+    flex-direction: column;      
+   padding-left: 8px;
+    padding-top: 15px;
+    font-weight: bold;   
+}
+.hist1f{
+    display: flex;
+    flex-direction: column;      
+   padding-left: 30px;
+    padding-top: 15px;
+    font-weight: bold;   
+}
+.hist1e{
+    display: flex;
+    flex-direction: column;      
+   padding-left: 13px;
+    padding-top: 15px;
+    font-weight: bold;   
+}
+.bloquePests{
+    display: flex;
+    justify-content: center;
+}
+
+.bloqueUploads{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.fila1{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+}
+.fila2{
+    display: flex;
+    flex-direction: row;
+}
+.upload{
+    padding-right: 25px;
+}
+@media screen and (max-width:550px) {
+    
+    .searchBar{
+        display: none;
+    }
+}         
+  
+    
+    
+    
+        @media (max-width:550px) {
+           .bloquePerfil{
+               display: flex;
+               flex: auto;
+           }
+            .foto {
+                max-width:80px;
+                max-height: 80px;
+            }
+            
+        }
+        
+        @media (min-width:768px) {
+            body{
+                margin-left:auto;
+                margin-right:auto;
+            }
+        }
+        
+        @media (min-width:992px) {
+            .foto {
+                max-width: 314px;
+                max-height: 314px;
+            }
+        }
+        
+        @media (min-width:1200px) {
+            .foto {
+                max-width: 380px;
+                max-height: 380px;
+            }
+        }
+        
+      
