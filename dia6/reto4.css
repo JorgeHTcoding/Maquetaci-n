@@ -1,0 +1,93 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    
+    list-style: none;
+    @-ms-viewport {
+        width: extend-to-zoom;
+        zoom: 1.0;
+
+    }
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: grid; 
+    grid-template-areas: 
+    "bloque1 bloque1 bloque2"
+    "bloque3 bloque4 bloque4"
+    "bloque5 bloque5 bloque5"
+    ;   
+    grid-template-rows: 1fr 6fr 1fr;
+    color:white;
+    text-align: center;
+}
+
+.item0{
+    padding-top: 15px;
+    grid-area: bloque1;
+    background-color: rgb(156, 44, 0);    
+}
+.item1{
+    padding-top: 15px;
+    grid-area: bloque2;
+    background-color: rgb(71, 20, 0);      
+}
+.containerA{
+    display: grid;    
+    grid-area: bloque3;
+    background-color: orange;
+}
+.containerA{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerAside1{
+    margin-top:20px;
+    margin-bottom: 20px; 
+    padding-top: 10px;   
+    width: 95%;
+    min-height: 20%;
+    background-color: white;
+    color:orange;
+    font-weight: bold;
+}
+.containerB{
+    grid-area: bloque4;
+    background-color: orangered;
+}
+.containerB{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerContenido1{
+    margin-top: 15px;   
+    padding-top: 13px;   
+    width: 97%;
+    min-height: 45%;
+    border: 2px solid white;   
+    
+}
+.containerContenido2{
+    margin-bottom: 15px;   
+    padding-top: 13px;   
+    width: 97%;
+    min-height: 45%;
+    border: 2px solid white;   
+    
+}
+.item5{
+    grid-area: bloque4;
+   
+}
+.item6{
+    padding-top: 13px; 
+    grid-area: bloque5;
+    background-color: rgb(71, 20, 0);
+}
