@@ -36,52 +36,91 @@
     background-color: rgb(71, 20, 0);      
 }
 .containerA{
+    width: 100%;
     display: grid;    
     grid-area: bloque3;
     background-color: orange;
 }
-.containerA{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.containerAside0{
+    width: 90%;
+    margin-left: 15px;
+    grid-template-areas: 
+    "topA"
+    "centerA"
+    "bottomA" ;
+    grid-template-rows: 1fr 3fr 1fr;    
+    color: orange;
 }
 .containerAside1{
+    grid-area: topA;
     margin-top:20px;
     margin-bottom: 20px; 
     padding-top: 10px;   
+    width: 105%;
+    min-height: 20%;
+    background-color: white;
+    color:orange;
+    font-weight: bold;
+
+}.containerAsideNull{
+    grid-area: centerA;
     width: 95%;
+    min-height: 20%;
+    margin-bottom: 35%;  
+    
+}
+.containerAside2{
+    grid-area: bottomA;    
+    margin-top:20px;
+    margin-bottom: 20px; 
+    padding-top: 10px;   
+    width: 105%;
     min-height: 20%;
     background-color: white;
     color:orange;
     font-weight: bold;
 }
+
 .containerB{
+    width: 100%;
+    display: grid;    
     grid-area: bloque4;
-    background-color: orangered;
+    background-color: orangered
 }
-.containerB{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.containerAside0{
+    width: 90%;
+    margin-left: 15px;
+    grid-template-areas: 
+    "topA"    
+    "bottomA" ;
+    grid-template-rows: 1fr 3fr 1fr;    
+    color: orange;
 }
 .containerContenido1{
-    margin-top: 15px;   
-    padding-top: 13px;   
-    width: 97%;
+    grid-area: topA;
+    margin-top:10px;
+    margin-bottom: 15px;    
+    margin-left: 10px; 
+    padding-top: 10px;   
+    width: 98%;
     min-height: 45%;
-    border: 2px solid white;   
-    
+    border: 2px solid white;
+    color:rgb(241, 241, 241);
+    font-weight: bold;  
 }
 .containerContenido2{
-    margin-bottom: 15px;   
-    padding-top: 13px;   
-    width: 97%;
-    min-height: 45%;
-    border: 2px solid white;   
+    grid-area: topA;
     
+    margin-bottom: 10px;
+    margin-left: 10px; 
+    padding-top: 10px;   
+    width: 98%;
+    min-height: 45%;
+    border: 2px solid white;
+    color:rgb(241, 241, 241);
+    font-weight: bold;  
 }
+
 .item5{
     grid-area: bloque4;
    
