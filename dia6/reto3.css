@@ -22,64 +22,72 @@
 }
 
 .bloque1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 25px;
     grid-column: left0/right1;
     background-color: black;    
     text-align: center;
     font-size: 40px;
 }
 .bloque2{
+    display: grid;
     grid-column: left0/left0;
     background-color: rgb(46, 46, 250);
 }
-.bloque3{
-    grid-column: right0/right0;
-    background-color: cyan;
-}
-.bloque4{
-    grid-column: left0/right1;
-    background-color: rgb(70, 0, 70);
+.contenido2{
+    
+    display: grid;
+    grid-template-columns: [left0]3fr [right0]1fr ;
+    grid-template-rows: [top0]1fr [bottom0]2fr;
 }
 .item1{
-    min-height:20vh;
-    border: 1px solid white;
-    margin:20px;
-    padding-top: 10px;
-    padding-left: 10px;
-    font-size: 30px;
+    padding:10px;
+    display: grid;
+    height: 200px;
+    grid-column: left0/right1;
+    grid-row: top0/bottom0;
+    border: 2px solid white;
+    margin: 10px;
 }
 .bloque2A{
-    display: flex;
-    flex-direction: row;
-    min-height:50vh;    
-    margin:20px;
-    padding-top: 5px;    
+    
+    margin-left: 10px;
+    width: 80%;
+    height:450px;
+    display: grid;
+    grid-row: bottom0/bottom1;
+    grid-column: left0/right0;
+    border: 2px solid white;
+}
+.bloque2B{
+    
+    width: 520px;
+    height:450px;
+    margin-left: -185px;
+    display: grid;
+    grid-row: bottom0/bottom1;
+    grid-column: right0/right1;
+    border: 2px solid white;
+}   
+.bloque3{
+    display: grid;
+    grid-column: right0/right1;
+    grid-row:center0/bottom0;
+    background-color: cyan;
+    text-align: center;
+    grid-template-rows: [D1]1fr [D2]1fr [D3]1fr [D4]1fr;
+   
 }
 .item2{
-    padding-top: 10px;
-    padding-left: 10px;
-    min-width:60.6%;    
-    border: 1px solid white;
+    padding:10px;
 }
 .item3{
-    padding-top: 10px;
-    padding-left: 10px;
-    min-width:37%; 
-    margin-left: 10px;  
-    border: 1px solid white;
-}
-.bloque3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding:10px;
 }
 .item4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 50px;
+    margin:10px;
+    display: grid;
+    grid-row: D1/D2;
     font-size: 40px;
     min-height: 22%;
     min-width: 90%;
@@ -87,9 +95,10 @@
     margin-top: 15px;   
 }
 .item5{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 50px;
+    margin:10px;
+    display: grid;
+    grid-row: D2/D3;
     min-height: 22%;
     min-width: 90%;
     background-color: black;
@@ -99,9 +108,10 @@
 
 }
 .item6{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 50px;
+    margin:10px;
+    display: grid;
+    grid-row: D3/D4;
     min-height: 22%;
     min-width: 90%;
     background-color: black;
@@ -109,38 +119,44 @@
     margin-top: 15px;
 }
 .item7{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 50px;
+    margin:10px;
+    display: grid;
+    grid-row: D4/D5;
     min-height: 22%;
     min-width: 90%;
     background-color: black;
     border: 2px solid black;
     margin-top: 15px;
 }
-.bloque4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 
+.bloque4{
+    display: grid;
+    grid-column: left0/right1;
+    background-color: rgb(70, 0, 70);
+    
 }
+.bloque4A{
+    display: grid;
+    grid-template-columns: [left0]1fr [right0]1fr ;
+    grid-template-rows: [main0]1fr ;
+}
+
 .item8{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 45%;
-    min-height: 82%;
-    border: 1px solid white;
-    border: 3px solid rgb(0, 0, 0);
+    padding-top: 40px ;
+    margin:5px;
+    display: grid;
+    width: 920px;
+    grid-column: left0/right0;
+     border: 3px solid rgb(0, 0, 0);
     text-align: center;
 }
 .item9{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 53%;
-    min-height: 82%;
+    padding-top: 40px ;
+    margin:5px;
+    width: 920px;
+    display: grid;
+    grid-column: right0/right1;  
     border: 3px solid rgb(0, 0, 0);
     text-align: center;
 }
