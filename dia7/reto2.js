@@ -60,7 +60,7 @@ $(function () {
             contadorPrecio += arrayCarrito[i].precio                     
         }          
          $("#precioCarrito").html(contadorPrecio);
-        //  $('#counter').empty().append(contadorPrecio);   
+       
     });
 });
 
