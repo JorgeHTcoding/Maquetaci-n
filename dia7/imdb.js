@@ -75,8 +75,8 @@ function addMovie() {
     movieInput.Productora = document.getElementById("input12").value;
     movieInput.Distribuidora = document.getElementById("input13").value;
     movieInput.Género = document.getElementById("input02").value;
-    movieInput.Portada = document.getElementById("input14").value;
-    movieInput.Retrato = document.getElementById("input15").value;
+    movieInput.Portada = `<img src=" ${document.getElementById("input14").value}">`;
+    movieInput.Retrato = `<img src=" ${document.getElementById("input15").value}">` ;
 
     imdbB.peliculas.concat(imdbA.peliculas)
     imdbB.movieInfo();
